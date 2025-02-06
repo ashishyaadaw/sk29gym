@@ -1,21 +1,22 @@
 {
   "expo": {
-    "name": "AuthApp",
-    "slug": "AuthApp",
-    "version": "1.0.0",
+    "name": "SK29GYM",
+    "slug": "SK29GYM",
+    "version": "1.2.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/logo.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
+    "newArchEnabled": false,
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.sk29gym.sk29gym"
     },
     "web": {
       "bundler": "metro",
@@ -32,10 +33,21 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false,
+        "apiUrl": "https://members.sk29gym.com/"
+      },
+      "eas": {
+        "projectId": "06dd4c14-ae36-4424-81d3-9c8e078f4c12"
+      }
     }
   }
 }
+
